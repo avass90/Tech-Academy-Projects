@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<title>Basic HTML</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/one-page_website.css">
+		
+	</head>
+	<body>
+		<!--NAV-->
+		<div>
+			<nav>
+				<a href="#home">HOME</a>
+				<a href="#pictures">PICTURES</a>
+				<a href="#video">VIDEO</a>
+				<a href="#contact">CONTACT</a>
+			</nav>
+		</div>
+		<!--END NAV-->
+	
+		<!--HOME-->
+		<div id="home">
+			<h1>Welcome to my website about fly fishing!</h1>
+			<p>I will go over some types of flies, and provide an instructional video.</p>
+		</div>
+		<!--END HOME-->
+	
+		<!--PICTURES-->
+		<div id="pictures">
+			<h2>Some flies</h2>
+			
+			<!-- PHOTO CONTAINER 1-->
+			<div>
+				<img src="./Images/thumb_1.jfif" alt="Elk Hair Caddis" onclick="openModal();currentSlide(1)">
+				<p>Elk Hair Caddis</p>
+			</div>
+			<!--END PHOTO CONTAINER 1-->
+			
+			<!-- PHOTO CONTAINER 2-->
+			<div>
+				<img src="./Images/thumb_2.jfif" alt="Parachute Adams" onclick="openModal();currentSlide(2)">
+				<p>Parachute Adams</p>
+			</div>
+			<!--END PHOTO CONTAINER 2-->
+			
+			<!-- PHOTO CONTAINER 3-->
+			<div>
+				<img src="./Images/thumb_3.jfif" alt="Prince Nymph" onclick="openModal();currentSlide(3)">
+				<p>Prince Nymph</p>
+			</div>
+			<!--END PHOTO CONTAINER 3-->
+			
+			<!-- PHOTO CONTAINER 4-->
+			<div>
+				<img src="./Images/thumb_4.jfif" alt="Hares Ear Nymph" onclick="openModal();currentSlide(4)"><img>
+				<p>Hares Ear Nymph</p>
+			</div>
+			<!--END PHOTO CONTAINER 4-->
+			
+			<!-- PHOTO CONTAINER 5-->
+			<div>
+				<img src="./Images/thumb_5.jfif" alt="rs2 Emerger" onclick="openModal();currentSlide(5)"><img>
+				<p>rs2 Emerger</p>
+			</div>
+			<!--END PHOTO CONTAINER 5-->
+			
+			<!-- PHOTO CONTAINER 6-->
+			<div>
+				<img src="./Images/thumb_6.jfif" alt="Rainbow Warrior" onclick="openModal();currentSlide(6)"><img>
+				<p>Rainbow Warrior</p>
+			</div>
+			<!--END PHOTO CONTAINER 6-->
+			
+			<!-- PHOTO CONTAINER 7-->
+			<div>
+				<img src="./Images/thumb_7.jfif" alt="Zebra Midge" onclick="openModal();currentSlide(7)"><img>
+				<p>Zebra Midge</p>
+			</div>
+			<!--END PHOTO CONTAINER 7-->
+			
+		</div>
+		<!--END PICTURES-->
+
+		<!--MODAL-->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 7</div>
+					<img src="./Images/thumb_1.jfif" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 7</div>
+					<img src="./Images/thumb_2.jfif" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 7</div>
+					<img src="./Images/thumb_3.jfif" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 7</div>
+					<img src="./Images/thumb_4.jfif" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 7</div>
+					<img src="./Images/thumb_5.jfif" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 7</div>
+					<img src="./Images/thumb_6.jfif" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">7 / 7</div>
+					<img src="./Images/thumb_7.jfif" style="width:100%">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<div class="column">
+					<img class="demo cursor" src="./Images/thumb_1.jfif" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="./Images/thumb_2.jfif" style="width:100%" onclick="currentSlide(2)" alt="Nature and sunrise">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="./Images/thumb_3.jfif" style="width:100%" onclick="currentSlide(3)" alt="Nature and sunrise">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="./Images/thumb_4.jfif" style="width:100%" onclick="currentSlide(4)" alt="Nature and sunrise">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="./Images/thumb_5.jfif" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="./Images/thumb_6.jfif" style="width:100%" onclick="currentSlide(6)" alt="Nature and sunrise">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="./Images/thumb_7.jfif" style="width:100%" onclick="currentSlide(7)" alt="Nature and sunrise">
+				</div>
+			</div>
+		</div>
+
+
+		<!--END MODAL-->
+	
+		<!--VIDEO-->
+		<div id="video">
+			<h2>How to tie a Copper John</h2>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/on6tnuje1SY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<!--END VIDEO-->
+	
+		<!--CONTACT-->
+		<div id="contact">
+			<h2>Provide your contact info and I will get back to you!</h2>
+			<div>
+				<form action="./Contacts.txt" method="post">
+					<input type="text" value="First Name">
+					<br>
+					<input type="text" value="Last Name">
+					<br>
+					<input type="text" value="Email Address">
+					<br>
+					<input type="text" value="Phone Number">
+					<br>
+					<input type="submit" value="Submit">
+				</form>
+		</div>
+		<!--END CONTACT-->
+		<br>
+		<!--FOOTER-->
+		<div>
+			<footer>
+				wwww.flyfishingisfun.fishing &nbsp;|&nbsp; &copy 2020
+			</footer>
+		</div>
+		<!--END FOOTER-->
+		<script src="./JS/one_page_website.js"></script>
+	</body>
+</html>
+	
